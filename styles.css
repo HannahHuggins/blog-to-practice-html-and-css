@@ -149,9 +149,7 @@ a.social {
   background-size: 30px 30px;
   opacity: .5;
   transition: all .25s;
-}
-a.treehouse {
-  background-image: url(images/treehouse.png);
+
 }
 a.linkedin {
   background-image: url(images/linkedin.svg);
