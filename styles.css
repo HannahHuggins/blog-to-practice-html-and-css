@@ -204,3 +204,14 @@ a.social:hover {
 
 }
 
+  h3 {
+    color: blue;
+    letter-spacing: .5px;
+  }
+
+  .card-title{
+    text-align: center;
+    border: solid black 3px;
+    border-radius: 10px;
+    opacity: 0.5;
+  }
