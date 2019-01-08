@@ -214,4 +214,6 @@ a.social:hover {
     border: solid black 3px;
     border-radius: 10px;
     opacity: 0.5;
+    padding: 5px;
+    margin-top: 50px;
   }
