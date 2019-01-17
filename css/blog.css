@@ -36,70 +36,7 @@ a:hover {
   opacity: 0.7;
 }
 
-.nav .name {
-  display: none;
-}
-
-.nav li {
-  padding: 5px 10px 10px 10px;
-}
-
-h1 {
-    background-color: #dfdfdf;
-    padding: 5px;
-}
-
-.section-title {
-    text-transform: uppercase;
-}
-
-.main-nav {
-    width: 100%;
-    background: black;
-    min-height: 30px;
-    padding: 10px;
-    position: fixed;
-    text-align: center;
-    opacity: 0.7;
-  }
-
-  
-  header {
-    text-align: center;
-    background: url('../images/laptop2.jpeg') no-repeat top center ;
-    background-size: cover;
-    overflow: hidden;
-    padding-top: 60px;
-  }
-  
-  header {
-    line-height: 1.5;
-  }
-  header .profile-image {
-    margin-top: 50px;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 3px solid white;
-    transition: all .5s;
-  }
-  header .profile-image:hover {
-    transform: scale(1.2) rotate(5deg);
-  }
-
-  footer ul li {
-    display: inline-block;
-  }
-  .main-nav {
-  width: 100%;
-  background: black;
-  min-height: 30px;
-  padding: 10px;
-  position: fixed;
-  text-align: center;
-  opacity: 0.7;
-}
-.nav {
+.nav{
   display: flex;
   justify-content: space-around;
   font-weight: 700;
@@ -107,16 +44,20 @@ h1 {
   margin: 0 auto;
   padding: 0;
 }
+
 .nav .name {
   display: none;
 }
+
 .nav li {
   padding: 5px 10px 10px 10px;
 }
+
 .nav a {
   transition: all .5s;
 }
-.nav a:hover {
+
+.nav a:hover{
   color: white
 }
 
@@ -127,91 +68,157 @@ header {
   overflow: hidden;
   padding-top: 60px;
 }
+
 header {
   line-height: 1.5;
 }
-header .profile-image {
-  margin-top: 50px;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 3px solid white;
-  transition: all .5s;
-}
-header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+
+.tag {
+  background-color: #efefef;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  display: table;
+  margin: 10px auto;
+  opacity: 0.9;
 }
 
-  a.social {
-    display: inline-block;
-    text-indent: -9999px;
-    margin-left: 5px;
-    width: 30px;
-    height: 30px;
-    background-size: 30px 30px;
-    opacity: .5;
-    transition: all .25s;
+.location {
+  background-color: #222;
+  color: #bfd8d5;
+}
+.card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+}
+.card:hover {
+  border-color:#b1bed5;
+}
+
+ul.skills {
+  padding: 0;
+  text-align: center;
+}
+
+.skills li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #ff9904;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.skills li:nth-child(odd) {
+  background: #0399ff;
+}
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+}
+
+footer .copyright {
+  top: -8px;
+  margin-right: 20px;
+  font-size: .75em;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .5;
+  transition: all .25s;
+
+}
+a.linkedin {
+  background-image: url(../images/linkedin.svg);
+}
+a.github {
+  background-image: url(../images/github.svg);
+}
+a.social:hover {
+  opacity: 1;
+}
+.clearfix {
+  clear: both;
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 720px) {
   
-  }
-  a.linkedin {
-    background-image: url(../images/linkedin.svg);
-  }
-  a.github {
-    background-image: url(../images/github.svg);
-  }
-  a.social:hover {
-    opacity: 1;
-  }
-  .clearfix {
-    clear: both;
-  }
-  
-  /* Styles for larger screens */
-  @media screen and (min-width: 720px) {
-    
-    .flex {
-        display: flex;
-        max-width: 1200px;
-        justify-content: space-around;
-        margin: 0 auto;
-    }
-  
-    header {
-      min-height: 450px;
-    }
-  
-    .nav {
+  .flex {
+      display: flex;
       max-width: 1200px;
-    }
-  
-    .nav .name {
-      display: block;
-      margin-right: auto;
-      color: white;
-    }
-  
-    main {
-      padding-top: 50px;
-    }
-  
-    main p {
-      line-height: 1.6em;
-    }
-  
-    footer {
-      font-size: 1.3em;
-      max-width: 1200px;
-      margin: 40px auto;
-    }
-  
+      justify-content: space-around;
+      margin: 0 auto;
   }
 
-  .tag {
-    background-color: #efefef;
-    color: black;
-    padding: 10px;
-    border-radius: 5px;
-    display: table;
-    margin: 10px auto;
-    opacity: 0.9;
-  } 
+  header {
+    min-height: 450px;
+  }
+
+  .nav {
+    max-width: 1200px;
+  }
+
+  .nav .name {
+    display: block;
+    margin-right: auto;
+    color: white;
+  }
+
+  main {
+    padding-top: 50px;
+  }
+
+  main p {
+    line-height: 1.6em;
+  }
+
+  footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+
+}
+
+  h3 {
+    color: blue;
+    letter-spacing: .5px;
+  }
+
+  .card-title{
+    text-align: center;
+    border: solid black 3px;
+    border-radius: 10px;
+    opacity: 0.5;
+    padding: 5px;
+    margin-top: 50px;
+  }
+
+  @viewport {
+    width: device-width ;
+    zoom: 1.0 ;
+  }
