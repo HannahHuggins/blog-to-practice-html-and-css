@@ -2,6 +2,11 @@
 * { 
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(../fonts/Raleway-Thin.ttf)
+}
   
 body {
   margin: 0;
@@ -55,7 +60,7 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/manchester3.jpg') no-repeat top center ;
+  background: url('../images/manchester3.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -152,10 +157,10 @@ a.social {
 
 }
 a.linkedin {
-  background-image: url(images/linkedin.svg);
+  background-image: url(../images/linkedin.svg);
 }
 a.github {
-  background-image: url(images/github.svg);
+  background-image: url(../images/github.svg);
 }
 a.social:hover {
   opacity: 1;
