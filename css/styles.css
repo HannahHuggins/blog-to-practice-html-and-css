@@ -58,10 +58,16 @@ a:hover {
   color: white
 } */
 
-header {
-  text-align: center;
+/* header {
   background: url('../icons/html.png') no-repeat left center ;
-}
+} */
+
+
+
+
+
+
+
 header {
   line-height: 1.5;
 }
