@@ -129,7 +129,6 @@ ul.skills {
 footer {
   width: 100%;
   min-height: 30px;
-  padding: 20px 0 40px 20px;
 }
 
 footer .copyright {
@@ -239,16 +238,6 @@ a.social:hover {
     text-decoration: none;
     color: #ccc;
 }
-
-body {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  color: #222;
-  background: #f4f3f3;
-}
-
 .wrapper{
     display: flex;
     flex-direction: column;
@@ -345,7 +334,6 @@ body {
 /************* Style and animate the nav overlay ***********************/
 .main-nav-list::before,
 .main-nav-list::after{
-    background-color:#69779b;
     content:"";
     position: absolute;
     top: 0;
@@ -387,9 +375,9 @@ body {
 }
 
 /************* Style the nav elements when active. ***********************/
-.masthead.active h1{
+/* .masthead.active h1{
     text-shadow: 0px 3px 3px rgba(0,0,0,.4);
-}
+} */
 
 .menu-toggle.active .one{
     box-shadow: 0px 3px 13px rgba(0,0,0,.4);
