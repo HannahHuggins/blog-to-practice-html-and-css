@@ -92,6 +92,7 @@ a.social:hover {
 header {
   min-height: 10px;
   line-height: 1cm;
+  padding-bottom: 200px;
 }
 
 .nav {
@@ -338,7 +339,7 @@ h1:before {
 h1:after {
 	border-bottom-width: 10px;
 	border-left-width: 10px;
-	bottom: -25px;
+	bottom: -8px;
 	left: -35px;
 }
 h1:hover:before,
