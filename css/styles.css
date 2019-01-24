@@ -33,8 +33,8 @@ footer .copyright {
 
 footer ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 10px;
+  padding: 10px;
 }
 
 footer ul li {
@@ -111,7 +111,7 @@ h2 {
   box-sizing: border-box;
   list-style-type: none; /* Styled in normalize.css */
   text-decoration: none;
-  color: #ccc;
+  color: #60656b;
 }
 .wrapper{
     display: flex;
@@ -190,13 +190,6 @@ h2 {
     height: 100vh;
     width: 0vw;
     transition: all 100ms ease-in-out 300ms;
-}
-
-.main-nav-list::before{
-    left: 0;
-}
-.main-nav-list::after{
-    right: 0;
 }
 
 .main-nav-list ul{
