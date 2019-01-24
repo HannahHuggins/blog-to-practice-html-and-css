@@ -17,73 +17,12 @@ body {
   background: #f4f3f3;
 }
 
-header {
-  line-height: 1.5;
-}
-
-header .profile-image {
-  margin-top: 5px;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 3px solid white;
-  transition: all .5s;
-}
-
-header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
-}
-
-.tag {
-  background-color: #efefef;
-  color: black;
-  padding: 10px;
-  border-radius: 5px;
-  display: table;
-  margin: 10px auto;
-  opacity: 0.9;
-} 
-
-.location {
-  background-color: #222;
-  color: #bfd8d5;
-}
-
-.card {
-  margin: 30px;
-  padding: 20px 40px 40px;
-  max-width: 500px;
-  text-align: left;
-  background: #fff;
-  border-bottom: 4px solid #ccc;
-  border-radius: 6px;
-}
-
-.card:hover {
-  border-color:#b1bed5;
-}
-
-ul.skills {
-  padding: 0;
-  text-align: center;
-}
-
-.skills li {
-  border-radius: 6px;
-  display: inline-block;
-  background: #ff9904;
-  color: white;
-  padding: 5px 10px;
-  margin: 2px;
-}
-
-.skills li:nth-child(odd) {
-  background: #0399ff;
-}
-
 footer {
   width: 100%;
   min-height: 30px;
+  font-size: 1.3em;
+  max-width: 1200px;
+  margin: 40px auto;
 }
 
 footer .copyright {
@@ -129,68 +68,50 @@ a.social:hover {
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
   
-  .flex {
-      display: flex;
-      max-width: 1200px;
-      justify-content: space-around;
-      margin: 0 auto;
-  }
-
-  header {
-    min-height: 10px;
-  }
-
-  .nav {
-    max-width: 1200px;
-  }
-
-  .nav .name {
-    display: block;
-    margin-right: auto;
-    color: white;
-  }
-
-  main {
-    padding-top: 50px;
-  }
-
-  main p {
-    line-height: 1.6em;
-  }
-
-  footer {
-    font-size: 1.3em;
-    max-width: 1200px;
-    margin: 40px auto;
-  }
-
+.flex {
+  display: flex;
+  max-width: 1200px;
+  justify-content: space-around;
+  margin: 0 auto;
 }
 
-  h2 {
-    letter-spacing: .20px
-  }
+header {
+  min-height: 10px;
+  line-height: 1cm;
+}
 
-  .card-title{
-    text-align: center;
-    border: solid black 3px;
-    border-radius: 10px;
-    opacity: 0.5;
-    padding: 5px;
-    margin-top: 50px;
-  }
+.nav {
+  max-width: 1200px;
+}
 
-  @viewport {
-    width: device-width ;
-    zoom: 1.0 ;
-  }
+.nav .name {
+  display: block;
+  margin-right: auto;
+  color: white;
+}
+
+main {
+  padding-top: 50px;
+}
+}
+
+h2 {
+  letter-spacing: .20px
+}
 
 
-  *{
-    padding: 0; border: 0; margin: 0; 
-    box-sizing: border-box;
-    list-style-type: none; /* Styled in normalize.css */
-    text-decoration: none;
-    color: #ccc;
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+
+
+*{
+  padding: 0; border: 0; margin: 0; 
+  box-sizing: border-box;
+  list-style-type: none; /* Styled in normalize.css */
+  text-decoration: none;
+  color: #ccc;
 }
 .wrapper{
     display: flex;
@@ -208,16 +129,16 @@ a.social:hover {
 }
 
 .masthead{
-    /* Both of these are needed to keep the #menu-toggle visible when nav list is active / open. */
-    position: relative;
-    z-index: 1000;
-    /********************************/
-    top: 0;
-    left: 0;
-    width: 100%;
-    align-items: baseline;
-    display: flex;
-    justify-content: space-between;
+  /* Both of these are needed to keep the #menu-toggle visible when nav list is active / open. */
+  position: relative;
+  z-index: 1000;
+  /********************************/
+  top: 0;
+  left: 0;
+  width: 100%;
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
 }
 
 .masthead h1{
@@ -259,30 +180,6 @@ a.social:hover {
     margin-bottom: .6rem;
     text-transform: uppercase;
 }
-
-.main-contents p{
-    font-size: 1.1rem;
-    letter-spacing: 1.7px;
-    line-height: 1.35;
-    margin-bottom: 1rem;
-}
-
-/*** Just getting silly now ***************************/
-.main-footer span{
-               color: #393e46;
-     transition-delay: 150ms;
-     transition-duration: 1350ms;
-}
-
-/*********************************************/
-.main-footer{
-    font-size: .9em;
-    letter-spacing: .18rem;
-    margin-bottom: 1.5rem;
-    text-align: center;
-    text-transform: uppercase;
-}
-
 
 /************* Style and animate the nav overlay ***********************/
 .main-nav-list::before,
@@ -403,49 +300,10 @@ span:hover:after {
     color: #393e46;
 }
 
-
-/*** Just getting silly now ***************************/
-.wrapper.active p{
-     color: rgb(50, 101, 134);
-               transition-delay: 150ms;
-     transition-duration: 350ms;
-}
-
-.main-footer.active span{
-     color: rgb(50, 101, 134);
-          transition-duration: 350ms;
-}
-
-
-
 body {
   margin: 0;
 	padding: 0;
 	overflow: hidden;
-
-.wrapper {
-display: flex;
-justify-content: center;
-align-items: center;
-width: 100%;
-height: 100vh;
-
-h1 {
-  position: relative;
-  font-family: 'Roboto', sans-serif;
-  font-size: 75px;
-  
-  a {
-    text-decoration: none;
-    color: #000;
-  
-    &:hover {
-      color: #9036D4;
-    }
-  }
-}
-
-  }
 }
 
 /* AFTER / BEFORE */
@@ -480,21 +338,6 @@ h1:hover:after {
     height: 100vh;
     opacity: 1;
 }
-
-/* ADD FOCUS - Thanks to Adrian Roselli @aardrian */
-
-.wrapper h1 a:focus {
-  color: #9036D4;
-  outline: none;
-}
-
-h1:focus-within:before,
-h1:focus-within:after {
-    width: 100vw;
-    height: 100vh;
-    opacity: 1;
-}
-
 .icons :hover{
   position: relative;
   top: -15px
