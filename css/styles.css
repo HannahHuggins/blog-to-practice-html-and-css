@@ -336,12 +336,7 @@ h1:before {
     right: -35px;
     top: -25px;
 }
-h1:after {
-	border-bottom-width: 10px;
-	border-left-width: 10px;
-	bottom: -8px;
-	left: -35px;
-}
+
 h1:hover:before,
 h1:hover:after {
     width: 100vw;
