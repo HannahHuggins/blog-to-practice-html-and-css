@@ -92,7 +92,7 @@ a.social:hover {
 header {
   min-height: 10px;
   line-height: 1cm;
-  padding-bottom: 200px;
+  padding-bottom: 500px;
 }
 
 .nav {
@@ -122,7 +122,7 @@ h2 {
 
 
 *{
-  padding: 0; border: 0; margin: 0; 
+  padding: inherit; border: 0; margin: 0; 
   box-sizing: border-box;
   list-style-type: none; /* Styled in normalize.css */
   text-decoration: none;
@@ -136,7 +136,7 @@ h2 {
     margin: 0 auto;
     max-width: 1550px;
     padding-top: .5rem;
-    width: 93%;
+
 
 }
 .main-header a{
@@ -145,10 +145,9 @@ h2 {
     font-size: 70px;
 }
 
-.header.intro {
-  font-size: 100px;
-}
+.intro {
 
+}
 .masthead{
   /* Both of these are needed to keep the #menu-toggle visible when nav list is active / open. */
   position: relative;
@@ -189,8 +188,8 @@ h2 {
     margin-bottom: 7px;
 }
 
-.main-contents{
-    flex: auto;
+.main-contents{  
+    padding: 10px;
 }
 
 .main-contents p{
@@ -198,7 +197,9 @@ h2 {
           transition-delay: 150ms;
      transition-duration: 850ms;
 }
-
+.main-contents h1{
+  font-size: 70px;
+}
 .main-contents h2{
     letter-spacing: 1.5px;
     margin-bottom: .6rem;
@@ -326,22 +327,22 @@ body {
 /* AFTER / BEFORE */
 h1:after,
 h1:before {
-	content: " ";
+	/* content: " ";
 	position: absolute;
 	z-index: -1;
 	height: 100px;
 	width: 100px;
 	transition-duration: .7s;
 	border: 0 solid #8892B0;
-	opacity: 0.7;
+	opacity: 0.7; */
 }
 h1:before {
-    border-right-width: 10px;
+    /* border-right-width: 10px;
     border-top-width: 10px;
     border-right-color: #000;
     border-top-color: #000;
     right: -35px;
-    top: -25px;
+    top: -25px; */
 }
 
 h1:hover:before,
@@ -361,10 +362,10 @@ h1:hover:after {
 }
 .main-contents {
   height: 100%;
+  flex: auto;
   width: 160px;
   position: fixed;
   z-index: 1;
-  top: 100px;
   left: 0;
   overflow-x: hidden;
   padding-top: 10px;
