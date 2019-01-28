@@ -92,7 +92,7 @@ a.social:hover {
 header {
   min-height: 10px;
   line-height: 1cm;
-  padding-bottom: 600px;
+  padding-bottom: 500px;
 }
 
 .nav {
@@ -161,6 +161,10 @@ h2 {
   justify-content: space-between;
 }
 
+.masthead h1{
+    transition-delay: 450ms;
+}
+
 .masthead h2{
   transition-delay: 450ms;
 }
@@ -196,7 +200,9 @@ h2 {
           transition-delay: 150ms;
      transition-duration: 850ms;
 }
-
+.main-contents h1{
+  font-size: 60px;
+}
 .main-contents h2{
     letter-spacing: 1.5px;
     margin-bottom: .6rem;
@@ -321,7 +327,12 @@ body {
 	overflow: hidden;
 }
 
-
+h1:hover:before,
+h1:hover:after {
+    width: 100vw;
+    height: 100vh;
+    opacity: 1;
+}
 .icons :hover{
   position: relative;
   width: 100%;
