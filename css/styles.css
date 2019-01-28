@@ -172,6 +172,7 @@ h2 {
     cursor: pointer;
     width: 55px;
     z-index: 3;
+    position: inherit;
 }
 
 .menu-toggle div{
