@@ -145,9 +145,7 @@ h2 {
     font-size: 70px;
 }
 
-.intro {
 
-}
 .masthead{
   /* Both of these are needed to keep the #menu-toggle visible when nav list is active / open. */
   position: relative;
