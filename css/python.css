@@ -7,16 +7,44 @@
     font-family: myFirstFont;
     src: url(../fonts/Raleway-Thin.ttf)
   }
+
+  .item1 {
+    grid-area: header;
+}
+.item2 {
+    grid-area: menu;
+}
+
+.item3 {
+    grid-area: main;
+}
   
+.item4 {
+    grid-area: right;
+}
+
+.item5 {
+    grid-area: footer;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'menu header header header right right'
+    'menu main main main right right'
+    'footer footer footer footer footer footer';
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.grid-container > div {
+    text-align: center; 
+    padding: 20px 0;
+}
   @font-face { 
     font-family: newFont; 
     src: url(../fonts-two/cute.ttf)
   } 
-  
-  @font-face {
-    font-family: lightCalibre;
-    src: url(../Calibre/light.otf)
-  }
   @font-face {
     font-family: boldCalibre;
     src: url(../Calibre/league.ttf)
@@ -24,48 +52,22 @@
   
   body {
     margin: 0;
-    padding: 0;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     color: #222;
     background: #00374D;
   }
-  
-  footer {
-    width: 100%;
-    min-height: 30px;
-    font-size: 1.3em;
-    max-width: 1200px;
-    margin: 40px auto;
-  }
-  
-  footer .copyright {
-    top: -8px;
-    margin-right: 20px;
-    font-size: .75em;
-  }
-  
-  footer ul {
-    list-style-type: none;
-    margin: 10px;
-    padding-top: 400px;
-  }
-  
-  footer ul li {
-    display: inline-block;
-  }
-  
+
   a.social {
     display: inline-block;
     text-indent: -9999px;
-    margin-left: 5px;
     width: 30px;
     height: 30px;
     background-size: 30px 30px;
     opacity: .5;
-    transition: all .25s;
-  
+    transition: all .25s; 
   }
+
   a.linkedin {
     background-image: url(../images/linkedin.svg);
   }
@@ -78,80 +80,18 @@
   .clearfix {
     clear: both;
   }
-  
-  /* Styles for larger screens */
-  @media screen and (min-width: 720px) {
-    
-  .flex {
-    display: flex;
-    max-width: 1200px;
-    justify-content: space-around;
-    margin: 0 auto;
-  }
-  
-  header {
-    min-height: 10px;
-    line-height: 1cm;
-  }
-  
-  .nav {
-    max-width: 1200px;
-  }
-  
-  .nav .name {
-    display: block;
-    margin-right: auto;
-    color: white;
-  }
-  
-  main {
-    padding-top: 200px;
-  }
-  }
-  
-  h2 {
-    letter-spacing: .20px
-  }
-  
-  
-  @viewport {
-    width: device-width ;
-    zoom: 1.0 ;
-  }
-  
-  
+
   *{
-    padding: 1px; border: 1px; margin: 1px; 
     box-sizing: border-box;
     list-style-type: none; /* Styled in normalize.css */
     text-decoration: none;
     color: #00adb5;
   }
   
-  .wrapper{
-    display: flex;
-      flex-direction: column;
-      height: 70vh;
-      margin: 0 auto;
-      max-width: 1550px;
-      padding-top: .5rem;
-  
-   
-  }
-  .main-header a{
-      letter-spacing: .18rem;
-      text-transform: uppercase;
-      font-size: 70px;
-  }
-  
   
   .masthead{
-    /* Both of these are needed to keep the #menu-toggle visible when nav list is active / open. */
+    /* keep the #menu-toggle visible when nav list is active / open. */
     position: relative;
- 
-    top: 0;
-    left: 0;
-    
     align-items: baseline;
     display: flex;
     justify-content: space-between;
@@ -168,8 +108,7 @@
       cursor: pointer;
       width: 55px;
       z-index: 3;
-      position: inherit;
-      float: right;
+      position: fixed
   }
   
   .menu-toggle div{
@@ -185,16 +124,10 @@
   .menu-toggle .one,
   .menu-toggle .two{
       margin-bottom: 7px;
-      margin-top: 8px;
+    
   }
 
  
-  .main-contents{  
-      padding: 1px;
-      margin: 1px;
-      border: 1px;
-  }
-  
   .main-contents p{
             color: #393e46;
             transition-delay: 150ms;
@@ -277,42 +210,9 @@
       transition-timing-function: cubic-bezier(.1, .2, .3, 1.4);
      
   }
-  span {
-    position: relative;
-    display: block;
-    cursor: pointer;
-  }
+ 
   
-  span:before, span:after {
-    content: '';
-    position: absolute;
-    width: 0%;
-    height: 1px;
-    top: 50%;
-    margin-top: -0.5px;
-    background: #fff;
-  }
-  
-  span:before {
-    left: -2.5px;
-  }
-  span:after {
-    right: 2.5px;
-    background: #393e46;
-    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
-  }
-  
-  span:hover:before {
-    background: #393e46;
-    width: 100%;
-    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-  }
-  
-  span:hover:after {
-    background: transparent;
-    width: 100%;
-    transition: 0s;
-  }
+ 
   
   
   .main-nav-list.active a{
@@ -321,12 +221,7 @@
       font-family: lightCalibre, light;
   }
   
-  body {
-    margin: 0;
-      padding: 0;
-      overflow: hidden;
-  }
-  
+ 
   h1:hover:before,
   h1:hover:after {
       width: 100vw;
@@ -345,16 +240,21 @@
   
   .language-icons :hover{
     position: relative;
-    top: -5px;
+    width: 100%;
+    z-index: 2;
+    color: #fff;
+    transition: all 0.25s;
+    cursor: pointer;
+
   }
   .main-contents {
     height: 100%;
     flex: auto;
-    position: fixed;
     z-index: 1;
     left: 0;
     overflow-x: hidden;
-    padding-right: 50px;
+    position: fixed;
+
   }
   
   
