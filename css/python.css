@@ -8,7 +8,7 @@
     src: url(../fonts/Raleway-Thin.ttf)
   }
 
-  .item1 {
+.item1 {
     grid-area: header;
 }
 .item2 {
@@ -235,6 +235,7 @@
     color: #fff;
     transition: all 0.25s;
     cursor: pointer;
+    letter-spacing: 1px
   }
   
   
