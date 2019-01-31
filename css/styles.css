@@ -79,6 +79,12 @@ a.social:hover {
   clear: both;
 }
 
+.intro.h1 {
+  font-family: 'newFont', calendar;
+
+
+}
+
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
   
@@ -340,7 +346,9 @@ h1:hover:after {
   cursor: pointer;
 }
 
-
+.h4 {
+  padding-left: 40px;
+}
 .language-icons :hover{
   position: relative;
   top: -5px;
